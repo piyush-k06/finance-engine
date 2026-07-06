@@ -1,7 +1,7 @@
 import sqlite3
+from db import get_db
 
-con = sqlite3.connect('finance.db')
-cur = con.cursor()
+con, cur = get_db()
 
 cur.execute('SELECT * FROM categories')
 
