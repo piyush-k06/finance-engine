@@ -25,6 +25,3 @@ def add_transaction(date, raw_vendor, amount, category_name):
     return cur.lastrowid
 
 
-# Example usage of add_transaction:
-transaction_id = add_transaction("2022-01-01", "Amazon", 100.00, "Food")
-print("Transaction added with ID:", transaction_id)
