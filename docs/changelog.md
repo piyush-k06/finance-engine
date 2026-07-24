@@ -38,3 +38,26 @@
 - A single logical transaction should have only one commit owner.
 - Avoid executable code at the module level; use test files or `if __name__ == "__main__":`.
 - Integration testing is essential before adding new features.
+
+
+## 25 July 2026
+
+### Added
+
+- Configurable file import pipeline
+- CSV and Excel file loading
+- Configurable column mapping system
+- Data cleaning pipeline
+- Data validation pipeline
+- Temporary transaction categorization module
+- Transaction import pipeline
+- Duplicate transaction handling
+
+### Improved
+
+- Standardized duplicate handling options (`skip`, `cancel`, `import_all`)
+- Improved data cleaning for mixed CSV/Excel data types using Pandas `string` dtype
+
+### Tested
+
+- End-to-end import pipeline

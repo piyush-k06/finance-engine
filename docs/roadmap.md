@@ -1,8 +1,6 @@
 # Project Roadmap
 
-## Phase 0
-
-Completed
+## Phase 0 (Completed)
 
 - Database setup
 - Categories
@@ -10,13 +8,30 @@ Completed
 - Vendor aliases
 - Transactions
 
-Upcoming
+## Phase 1 (Completed)
 
 - CSV Import
-- Analytics Engine
-- Dashboard
+- Excel Import
+- Configurable column mapping
+- Data cleaning
+- Data validation
+- Transaction import pipeline
 
-Future
+## Phase 2 (In Progress)
+
+- Automatic categorization
+- Spending analytics
+- Budget tracking
+- Vendor statistics
+- Category insights
+
+## Phase 3
+
+- Dashboard
+- Charts
+- Reports
+
+## Phase 4
 
 - LLM Query Engine
 - Web Application

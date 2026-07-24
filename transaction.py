@@ -24,4 +24,6 @@ def add_transaction(date, raw_vendor, amount, category_name):
     con.commit()
     return cur.lastrowid
 
-
+def transaction_exists(date, raw_vendor, amount):
+    cur.execute("SELECT * FROM transactions WHERE date = ? AND raw_vendor = ? AND amount = ?", (date, raw_vendor, amount))
+    return cur.fetchone() is not None

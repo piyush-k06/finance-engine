@@ -20,12 +20,18 @@ A modular personal finance analytics platform built with Python. The project foc
 - ✅ Database reset utility
 - ✅ Modular project architecture
 - ✅ Configuration-driven project structure
+- ✅ CSV & Excel import
+- ✅ Configurable column mapping
+- ✅ Data cleaning & validation pipeline
+- ✅ Duplicate transaction detection
 
 ---
 
 ## Tech Stack
 
 Python • SQLite • SQL • Pandas • Git • GitHub
+
+---
 
 ## Installation
 
@@ -90,22 +96,25 @@ Relationships are maintained using **foreign keys**.
 ## Current Workflow
 
 ```
-Raw Transaction
-      │
-      ▼
-Vendor Alias Lookup
-      │
-      ▼
-Vendor Resolution
-      │
-      ▼
-Category Lookup
-      │
-      ▼
-Transaction Validation
-      │
-      ▼
-Database Insertion
+Raw CSV / Excel
+       │
+       ▼
+Load File
+       │
+       ▼
+Map Columns
+       │
+       ▼
+Clean Data
+       │
+       ▼
+Validate Data
+       │
+       ▼
+Categorize Transactions
+       │
+       ▼
+Import to SQLite
 ```
 
 ---
@@ -122,16 +131,18 @@ Database Insertion
 - Integration tests
 - Documentation
 
-### Phase 1 (In Progress)
+### Phase 1 (Completed)
 
 - CSV Import
 - Excel Import
 - Configurable column mapping
 - Data cleaning
-- Validation pipeline
+- Data validation
+- Transaction import pipeline
 
-### Phase 2
+### Phase 2 (In Progress)
 
+- Automatic categorization
 - Spending analytics
 - Budget tracking
 - Vendor statistics
@@ -185,7 +196,5 @@ This project follows several software engineering principles:
 
 **Piyush Kumar**
 
-- GitHub: <https://github.com/piyush-k06>
-- LinkedIn: <https://www.linkedin.com/in/piyush--kumar06/>
-
----
+- GitHub: https://github.com/piyush-k06
+- LinkedIn: https://www.linkedin.com/in/piyush--kumar06/

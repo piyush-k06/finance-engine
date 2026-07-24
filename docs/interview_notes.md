@@ -63,3 +63,9 @@ vendor.py
 category.py
 
 transaction.py
+
+## Import Pipeline
+
+Implemented a configurable import pipeline capable of ingesting CSV and Excel bank statements through column mapping, data cleaning, validation, categorization, duplicate detection, and database insertion using a modular architecture.
+
+Designed and implemented a configurable bank statement import pipeline supporting CSV and Excel files through modular stages including file loading, column mapping, data cleaning, validation, categorization, duplicate detection, and database insertion.
