@@ -2,6 +2,7 @@ from transaction import add_transaction, transaction_exists
 import pandas as pd
 from pathlib import Path
 from config.column_map import COLUMN_MAP
+from config.category_rules import CATEGORY_RULES
 
 def load_file(path: Path):
     path = str(path).lower()
@@ -63,7 +64,19 @@ def validate_data(df):
     return errors, duplicates
 
 def categorize_data(df):
-    df['category_name'] = "Uncategorized"
+    categories = []
+    for vendor in df['raw_vendor']:
+        if pd.isna(vendor):
+                categories.append("Uncategorized")
+                continue
+        vendor = vendor.lower()
+        category = "Uncategorized"
+        for keyword, cat in CATEGORY_RULES.items():
+            if keyword in vendor:
+                category = cat
+                break
+        categories.append(category)
+    df['category_name'] = categories
     return df
 
 def import_transactions(df, duplicate_option="skip"):
