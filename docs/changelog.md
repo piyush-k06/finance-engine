@@ -74,11 +74,23 @@
 - Monthly spending summary
 - Highest transaction analysis
 - Average transaction calculation
+- Reporting module (`reports.py`)
+- Configurable summary reporting
+- Report filtering by:
+  - Date range
+  - Categories
+  - Vendors
+- Budget management module (`budget.py`)
+- Budget CRUD operations
+- Budget summary generation
+- Budget alert system
 
 ### Improved
 
-- Updated project roadmap to reflect analytics progress
-- Updated README with analytics module and current project status
+- Refactored reporting module to reuse analytics functions
+- Separated analytics, reporting, and budgeting into independent modules
+- Updated project roadmap
+- Updated README with latest project structure, workflow, features, and roadmap
 
 ### Tested
 
@@ -88,9 +100,16 @@
 - Verified monthly spending summary
 - Verified highest transaction detection
 - Verified average transaction calculation
+- Verified report filtering
+- Verified budget CRUD operations
+- Verified budget summary generation
+- Verified budget alert generation
+- Verified duplicate transaction handling during repeated imports
 
 ### Lessons Learned
 
 - Analytics functions should operate on DataFrames rather than directly querying the database.
 - Avoid modifying input DataFrames; work on a copy when transformations are required.
 - Keep analytics independent of the database layer to improve modularity and testability.
+- Reuse existing modules instead of duplicating business logic.
+- Separate CRUD operations from higher-level business logic to keep modules maintainable.

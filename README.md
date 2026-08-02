@@ -26,7 +26,9 @@ A modular personal finance analytics platform built with Python. The project foc
 - ✅ Duplicate transaction detection
 - ✅ Keyword-based transaction categorization
 - ✅ Financial analytics engine
-
+- ✅ Reporting engine
+- ✅ Budget management system
+- ✅ Budget monitoring & alerts
 ---
 
 ## Tech Stack
@@ -60,8 +62,11 @@ finance_engine/
 ├── transaction.py
 ├── vendor.py
 ├── analytics.py
+├── budget.py
+├── reports.py
 │
 ├── config/
+    ├── category_rules.py
 │   ├── column_map.py
 │   ├── constants.py
 │   └── settings.py
@@ -124,6 +129,9 @@ Import to SQLite
        │
        ▼
 Financial Analytics
+       │
+       ▼
+Reports & Budget Analysis
 ```
 
 ---
@@ -150,13 +158,19 @@ Financial Analytics
 - Transaction import pipeline
 - Keyword-based transaction categorization
 
-### Phase 2 (In Progress)
+## Phase 2 (Completed)
 
+- Financial reports
 - Budget management
 - Vendor statistics
 - Category insights
 - Monthly spending insights
-- Financial reports
+
+### Phase 2 (In Progress)
+
+- Budget forecasting
+- Report export (CSV/PDF)
+- CLI interface
 
 ### Phase 3
 
@@ -168,9 +182,9 @@ Financial Analytics
 
 - LLM-powered natural language query interface
 - Ask questions like:
-  - "How much did I spend on food this month?"
-  - "Show my top 10 merchants."
-  - "Compare this month's spending with last month."
+- "How much did I spend on food this month?"
+- "Show my top 10 merchants."
+- "Compare this month's spending with last month."
 
 ---
 
@@ -188,6 +202,8 @@ This project follows several software engineering principles:
 
 ---
 
+## Future Improvements
+
 - Intelligent transaction categorization
 - LLM-powered natural language querying
 - RAG-based financial assistant
@@ -196,7 +212,7 @@ This project follows several software engineering principles:
 - Authentication
 - OCR support for scanned statements
 - PDF statement import
-- Budget forecasting
+- Predictive budget forecasting
 - Web application
 
 ---

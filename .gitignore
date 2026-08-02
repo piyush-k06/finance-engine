@@ -6,3 +6,7 @@ finance.db
 .env
 
 uploads/
+
+sample.csv
+
+scratch.py

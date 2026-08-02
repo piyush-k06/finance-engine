@@ -6,7 +6,8 @@ COLUMN_MAP = {
     "raw_vendor": [
         "Narration",
         "Description",
-        "Merchant"
+        "Merchant",
+        "Vendor"
     ],
     "amount": [
         "Debit",

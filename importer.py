@@ -113,3 +113,18 @@ def import_transactions(df, duplicate_option="skip"):
         "skipped": skipped,
         "status": "completed"
     }
+
+def import_file(path):
+    df = load_file(Path(path))
+    df = map_columns(df)
+    df = clean_data(df)
+
+    errors, duplicates = validate_data(df)
+
+    if errors:
+        print(errors)
+        return None
+
+    df = categorize_data(df)
+
+    return import_transactions(df)

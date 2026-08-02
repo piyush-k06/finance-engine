@@ -18,13 +18,19 @@
 - Keyword-based transaction categorization
 - Transaction import pipeline
 
-## Phase 2 (In Progress)
+## Phase 2 (Completed)
 
-- Financial analytics engine
-- Budget tracking
+- Financial reports
+- Budget management
 - Vendor statistics
 - Category insights
 - Monthly spending insights
+
+### Phase 2 (In Progress)
+
+- Budget forecasting
+- Report export (CSV/PDF)
+- CLI interface
 
 ## Phase 3
 
