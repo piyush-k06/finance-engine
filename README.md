@@ -4,7 +4,7 @@ A modular personal finance analytics platform built with Python. The project foc
 
 > 🚧 **Status:** Active Development
 >
-> Current focus: Financial analytics engine and reporting.
+> Current focus: Financial analytics, budgeting, and reporting.
 
 ---
 
@@ -25,6 +25,7 @@ A modular personal finance analytics platform built with Python. The project foc
 - ✅ Data cleaning, validation & categorization pipeline
 - ✅ Duplicate transaction detection
 - ✅ Keyword-based transaction categorization
+- ✅ Financial analytics engine
 
 ---
 
@@ -58,6 +59,7 @@ finance_engine/
 ├── importer.py
 ├── transaction.py
 ├── vendor.py
+├── analytics.py
 │
 ├── config/
 │   ├── column_map.py
@@ -114,10 +116,14 @@ Validate Data
        ▼
 Categorize Transactions
        │
+       ▼
 Duplicate Check
        │
        ▼
 Import to SQLite
+       │
+       ▼
+Financial Analytics
 ```
 
 ---
@@ -142,14 +148,15 @@ Import to SQLite
 - Data cleaning
 - Data validation
 - Transaction import pipeline
-- Automatic categorization
+- Keyword-based transaction categorization
 
 ### Phase 2 (In Progress)
 
-- Spending analytics
-- Budget tracking
+- Budget management
 - Vendor statistics
 - Category insights
+- Monthly spending insights
+- Financial reports
 
 ### Phase 3
 
@@ -181,8 +188,6 @@ This project follows several software engineering principles:
 
 ---
 
-## Future Improvements
-
 - Intelligent transaction categorization
 - LLM-powered natural language querying
 - RAG-based financial assistant
@@ -191,6 +196,7 @@ This project follows several software engineering principles:
 - Authentication
 - OCR support for scanned statements
 - PDF statement import
+- Budget forecasting
 - Web application
 
 ---

@@ -15,24 +15,26 @@
 - Configurable column mapping
 - Data cleaning
 - Data validation
+- Keyword-based transaction categorization
 - Transaction import pipeline
 
 ## Phase 2 (In Progress)
 
-- Automatic categorization
-- Spending analytics
+- Financial analytics engine
 - Budget tracking
 - Vendor statistics
 - Category insights
+- Monthly spending insights
 
 ## Phase 3
 
-- Dashboard
-- Charts
-- Reports
+- Interactive dashboard
+- Charts & visualizations
+- Export reports
 
 ## Phase 4
 
-- LLM Query Engine
-- Web Application
+- LLM-powered natural language query engine
+- Intelligent transaction categorization
+- Web application
 - Authentication

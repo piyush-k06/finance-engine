@@ -61,3 +61,36 @@
 ### Tested
 
 - End-to-end import pipeline
+
+
+## 2 August 2026
+
+### Added
+
+- Financial analytics module (`analytics.py`)
+- Total spending calculation
+- Category-wise spending summary
+- Vendor-wise spending summary
+- Monthly spending summary
+- Highest transaction analysis
+- Average transaction calculation
+
+### Improved
+
+- Updated project roadmap to reflect analytics progress
+- Updated README with analytics module and current project status
+
+### Tested
+
+- Verified total spending calculation
+- Verified category-wise spending summary
+- Verified vendor-wise spending summary
+- Verified monthly spending summary
+- Verified highest transaction detection
+- Verified average transaction calculation
+
+### Lessons Learned
+
+- Analytics functions should operate on DataFrames rather than directly querying the database.
+- Avoid modifying input DataFrames; work on a copy when transformations are required.
+- Keep analytics independent of the database layer to improve modularity and testability.
